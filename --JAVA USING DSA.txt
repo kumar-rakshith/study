@@ -1,1 +1,5 @@
 --JAVA USING DSA
+
+THERE are two types of data in the java primitive and non-primiitive 
+
+--primitive that contain only single value like: int,string ect
