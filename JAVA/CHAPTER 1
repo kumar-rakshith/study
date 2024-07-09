@@ -1,1 +1,8 @@
+09-07-2024
+Time Complexity
 
+O(n): Time complexity of a simple loop when the loop variable is incremented or decremented by a constant amount
+
+O(logn) : Time complexity of a loop when the loop variable is divided or multiplied by a constant amount
+
+O(n^2): Time complexity of a nested loop
