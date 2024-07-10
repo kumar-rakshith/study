@@ -6,3 +6,34 @@ O(n): Time complexity of a simple loop when the loop variable is incremented or 
 O(logn) : Time complexity of a loop when the loop variable is divided or multiplied by a constant amount
 
 O(n^2): Time complexity of a nested loop
+
+---------------------------------------------------------------------------------------------------------
+### Linear Seacrh for an array with O(n) notation ### 
+
+class main {
+    public static void main(String[] args) {
+        int n[]={10,9,7,5,3,1};
+        int t=1;
+        int result = ls(n,t) ;
+        
+        if(result != -1)
+           System.out.println("element found "+(result+1));
+        else 
+           System.out.println("element not found");
+    }
+
+    public static int ls(int[] n,int t){
+         for(int i=0; i < n.length; i++){
+              if(n[i]==t)
+              return i;
+         }
+    return -1;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+
+QUEUE -- Followes first in first out principal where the elemeent that comes first goes out first
+
+Stack -- Followes last in first out where the element that comes in last goes out last
