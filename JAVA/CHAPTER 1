@@ -98,6 +98,9 @@ The concept of palindromes is not limited to just alphabetic characters but can 
 including digits and punctuation marks, as long as the sequence reads the same backward and forward. Palindromes are
 often used as exercises in programming and puzzles due to their simple yet intriguing nature
 
+
+QUESTION >>Given an integer x, return true if x is a palindrome, and false otherwise.
+ANSWER>>
 class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) {
