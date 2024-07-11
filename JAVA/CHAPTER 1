@@ -80,3 +80,33 @@ class main {
     }
 }
 -----------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+## > Palindrome problem
+
+A palindrome is a sequence of characters (such as a word, phrase, number, or other sequence) that reads the same backward as forward. In simpler terms, if you reverse the sequence of characters and it remains identical to the original sequence, then that sequence is called a palindrome.
+
+Examples of palindromes include:
+
+Words: "radar", "level", "madam", "racecar"
+Phrases: "A man, a plan, a canal, Panama!", "Madam, in Eden, I'm Adam."
+Numbers: 121, 1331, 12321
+The concept of palindromes is not limited to just alphabetic characters but can apply to any sequence of characters, including digits and punctuation marks, as long as the sequence reads the same backward and forward. Palindromes are often used as exercises in programming and puzzles due to their simple yet intriguing nature
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        int reversed = 0;
+        int original = x;
+        while (x != 0) {
+            int digit = x % 10;
+            reversed = reversed * 10 + digit;
+            x /= 10;
+        }
+        return original == reversed;
+    }
+}
+--------------------------------------------------------------------------------------------------------------
